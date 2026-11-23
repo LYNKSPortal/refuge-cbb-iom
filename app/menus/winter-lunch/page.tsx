@@ -3,6 +3,7 @@ import MenuPage from "@/components/MenuPage";
 import { menus } from "@/lib/menus";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/menus/winter-lunch" },
   title: "Winter Lunch Menu",
   description:
     "Winter 2026 lunch at Refuge, Douglas — seasonal dishes made with locally sourced Isle of Man produce.",

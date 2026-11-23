@@ -16,7 +16,7 @@ export const site = {
   bookingUrl:
     process.env.NEXT_PUBLIC_BOOKING_URL ??
     "https://dazzler.app/isle-of-man/douglas/refuge-d99r/book-a-table",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://refuge.im",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.refuge.co.im",
   openingHours: [
     { day: "Monday", hours: "Closed" },
     { day: "Tuesday", hours: "12–4 PM" },

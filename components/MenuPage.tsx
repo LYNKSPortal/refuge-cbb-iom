@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Reveal from "@/components/Reveal";
 import { dietaryLegend, type Menu } from "@/lib/menus";
+import { menuJsonLd, breadcrumbJsonLd } from "@/lib/schema";
 import { site } from "@/lib/site";
 
 export default function MenuPage({ menu }: { menu: Menu }) {
@@ -16,6 +17,22 @@ export default function MenuPage({ menu }: { menu: Menu }) {
 
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(menuJsonLd(menu)) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            breadcrumbJsonLd([
+              { name: "Home", url: site.url },
+              { name: "Menus", url: `${site.url}/#menus` },
+              { name: menu.title, url: `${site.url}/menus/${menu.slug}` },
+            ])
+          ),
+        }}
+      />
       <header className="relative flex min-h-[55svh] items-center justify-center text-center">
         <Image
           src={menu.banner}

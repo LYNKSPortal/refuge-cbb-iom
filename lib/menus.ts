@@ -36,7 +36,7 @@ export const menus: Menu[] = [
     intro:
       "Served Tuesday to Friday, 12–4 PM. Menus change with the seasons and the best of island produce.",
     pdf: "/menus/29.09.2026-Lunch-Menu.pdf",
-    banner: "/lunch-menu.jpg",
+    banner: "/hero-image.jpg",
     sections: [
       {
         title: "Small Plates",
@@ -93,7 +93,7 @@ export const menus: Menu[] = [
     intro:
       "Served Thursday to Saturday evening. Seasonal, ethical and locally sourced wherever possible.",
     pdf: "/menus/10.09.2026-Evening-Menu.pdf",
-    banner: "/evening-menu.jpg",
+    banner: "/hero-image.jpg",
     sections: [
       {
         title: "Starters",
@@ -152,7 +152,7 @@ export const menus: Menu[] = [
     intro:
       "Available from November 24th — served Tuesday to Friday, 12–4 PM. Seasonal winter dishes made with the best of island produce.",
     pdf: "/menus/24.11.2026%20-%20Winter%20Lunch%20Menu.pdf",
-    banner: "/lunch-menu.jpg",
+    banner: "/hero-image.jpg",
     sections: [
       {
         title: "Starters",
@@ -211,7 +211,7 @@ export const menus: Menu[] = [
     intro:
       "Available from November 24th — served Thursday to Saturday evening. Seasonal winter dishes, ethical and locally sourced wherever possible.",
     pdf: "/menus/24.11.2026%20-%20Winter%20Evening%20Menu.pdf",
-    banner: "/evening-menu.jpg",
+    banner: "/hero-image.jpg",
     sections: [
       {
         title: "Starters",
@@ -270,7 +270,7 @@ export const menus: Menu[] = [
     intro:
       "Thoughtful drinks — cocktails, wines, spirits and coffee. Home of the island's finest espresso martini.",
     pdf: "/menus/24.11.2026%20-%20Drinks%20List.pdf",
-    banner: "/Our%20Famous%20Espresso%20Martini.jpeg",
+    banner: "/hero-image.jpg",
     sections: [
       {
         title: "Champagnes & Sparklings",

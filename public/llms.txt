@@ -1,0 +1,34 @@
+# Refuge — Coffee · Bar · Bistro
+
+> Independent bistro and bar in the heart of Douglas, Isle of Man, run by
+> husband-and-wife team Rob and Tamara. Seasonal, locally sourced Manx produce,
+> signature cocktails and the island's famous espresso martini.
+
+## Key facts
+
+- Address: 52 Athol Street, Douglas, IM1 1JB, Isle of Man
+- Phone: +44 1624 616584
+- Email: hello@refuge.co.im
+- Opening hours: Mon closed · Tue–Wed 12:00–16:00 · Thu–Fri 12:00–23:00 ·
+  Sat 17:30–23:00 · Sun closed
+- Booking: https://dazzler.app/isle-of-man/douglas/refuge-d99r/book-a-table
+- Cuisine: Modern European / Bistro; dietary labels (V, Ve, Gf) marked on menus
+- Private hire available for celebrations, corporate functions and occasions
+- Reviews: Tripadvisor, Google and Facebook listings linked from the site
+
+## Pages
+
+- / — Home (story, signature dishes, chef, reviews, gallery, reservations)
+- /menus/lunch — Lunch menu (Tue–Fri 12–4 PM)
+- /menus/evening — Evening menu (Thu–Sat evenings)
+- /menus/winter-lunch — Winter lunch menu (from 24 Nov)
+- /menus/winter-evening — Winter evening menu (from 24 Nov)
+- /menus/drinks — Full drinks list: wines, cocktails, spirits, beers, coffee
+
+## Downloads
+
+- /menus/29.09.2026-Lunch-Menu.pdf
+- /menus/10.09.2026-Evening-Menu.pdf
+- /menus/24.11.2026%20-%20Winter%20Lunch%20Menu.pdf
+- /menus/24.11.2026%20-%20Winter%20Evening%20Menu.pdf
+- /menus/24.11.2026%20-%20Drinks%20List.pdf
