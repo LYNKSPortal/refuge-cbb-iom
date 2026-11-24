@@ -7,7 +7,6 @@ export const images = {
   hero: "/hero-image.jpg",
   welcomeInterior: "/outside-the-refuge.jpeg",
   welcomeTable: "/Our%20Famous%20Espresso%20Martini.jpeg",
-  chef: "/adam-the-chef.jpg",
   // Real Refuge photography. Names marked null are awaiting the real dish
   // names — nothing is invented. Update `name` to label them.
   dishes: [

@@ -18,7 +18,7 @@
 
 ## Pages
 
-- / — Home (story, signature dishes, chef, reviews, gallery, reservations)
+- / — Home (story, signature dishes, reviews, gallery, reservations)
 - /menus/winter-lunch — Lunch menu (Tue–Fri 12–4 PM)
 - /menus/winter-evening — Evening menu (Thu–Sat evenings)
 - /menus/drinks — Full drinks list: wines, cocktails, spirits, beers, coffee
