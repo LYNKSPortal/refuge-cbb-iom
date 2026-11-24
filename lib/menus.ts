@@ -20,7 +20,7 @@ export type MenuSection = {
 };
 
 export type Menu = {
-  slug: "lunch" | "evening" | "winter-lunch" | "winter-evening" | "drinks";
+  slug: "winter-lunch" | "winter-evening" | "drinks";
   title: string;
   intro: string;
   pdf?: string;
@@ -31,126 +31,10 @@ export type Menu = {
 
 export const menus: Menu[] = [
   {
-    slug: "lunch",
-    title: "Lunch Menu",
-    intro:
-      "Served Tuesday to Friday, 12–4 PM. Menus change with the seasons and the best of island produce.",
-    pdf: "/menus/29.09.2026-Lunch-Menu.pdf",
-    banner: "/hero-image.jpg",
-    sections: [
-      {
-        title: "Small Plates",
-        items: [
-          { name: "Manx Queenies", description: "Pancetta, garlic butter, focaccia", price: "15" },
-          { name: "Spinach & Parmesan Croquette", description: "Parma ham crumb, saffron aioli", price: "13" },
-          { name: "Braised Leeks & Whipped Ricotta", description: "Focaccia, crispy onions", price: "13", dietary: ["V"] },
-          { name: "Chicken Satay Toast", description: "Satay sauce, toasted nuts", price: "12" },
-          { name: "Mushroom Consommé", description: "Mushroom won tons, spring onion, coriander", price: "11", dietary: ["V"] },
-        ],
-      },
-      {
-        title: "Large Plates",
-        items: [
-          { name: "Confit Salmon", description: "Asparagus, pea & baby gem cream fricassée, crisp salmon skin", price: "24", dietary: ["GF"] },
-          { name: "Refuge Steak Sandwich", description: "Chimichurri, rocket, emmental", price: "17" },
-          { name: "Hot Smoked Salmon Caesar", description: "Baby gem, croutons, soft boiled egg, parmesan", price: "17" },
-          { name: "Refuge Burger", description: "Beef tomato, lettuce, emmental, burger sauce", price: "16" },
-          { name: "Squash Orzo", description: "Tenderstem broccoli, crispy onions", price: "17", dietary: ["VG"] },
-          { name: "King Prawn Orecchiette", description: "Cherry tomatoes, garlic & chilli butter, rocket", price: "18" },
-          { name: "Spicy Korean Chicken", description: "Coconut sticky rice, Asian slaw, pickled radish, gochujang", price: "17" },
-          { name: "Fillet Steak", description: "Cognac & peppercorn sauce — please allow an extra 10 minutes cooking time", price: "34", dietary: ["GF"] },
-        ],
-      },
-      {
-        title: "Desserts",
-        items: [
-          { name: "Popcorn Parfait", description: "Salted caramel meringue, blueberry compote", price: "7.95" },
-          { name: "Stilton Burnt Basque Cheesecake", description: "Spiced pumpkin jam", price: "7.95" },
-          { name: "Espresso Martini Affogato", description: "Kahlúa, vanilla Absolut, vanilla ice cream, double espresso", price: "12", dietary: ["GF"] },
-          { name: "Sticky Honey Cake", description: "Vanilla ice cream", price: "7.95" },
-          { name: "Sorbet", description: "Please ask your server for details", price: "7.95", dietary: ["VG", "GF"] },
-        ],
-      },
-      {
-        title: "Side Dishes",
-        items: [
-          { name: "Creamed Spinach", price: "5", dietary: ["GF"] },
-          { name: "French Fries", price: "5", dietary: ["GF"] },
-          { name: "Parmesan Fries", price: "6", dietary: ["GF"] },
-          { name: "Roast Carrots", description: "Café de Paris butter", price: "5", dietary: ["GF"] },
-          { name: "New Potatoes", description: "Garlic butter", price: "5", dietary: ["GF"] },
-          { name: "Sweet Potato Mash", price: "5", dietary: ["GF"] },
-          { name: "Cajun Corn Ribs", price: "5", dietary: ["GF"] },
-        ],
-      },
-    ],
-    note:
-      "Please always inform your server of any allergies or intolerances before placing your order. Not all ingredients are listed on the menu and we cannot guarantee the total absence of allergens.",
-  },
-  {
-    slug: "evening",
-    title: "Evening Menu",
-    intro:
-      "Served Thursday to Saturday evening. Seasonal, ethical and locally sourced wherever possible.",
-    pdf: "/menus/10.09.2026-Evening-Menu.pdf",
-    banner: "/hero-image.jpg",
-    sections: [
-      {
-        title: "Starters",
-        items: [
-          { name: "Manx Queenies", description: "Pancetta, garlic butter, focaccia", price: "15" },
-          { name: "Braised Leeks & Whipped Ricotta", description: "Focaccia, crispy onions", price: "13", dietary: ["V"] },
-          { name: "Chicken Satay Toast", description: "Satay sauce, toasted nuts", price: "12" },
-          { name: "Mushroom Consommé", description: "Mushroom won tons, spring onion", price: "11", dietary: ["VG"] },
-          { name: "Spinach Croquette", description: "Parma ham crumb, saffron & parmesan aioli", price: "13" },
-          { name: "Caesar Salad", description: "Parmesan, crispy egg yolk", price: "13" },
-          { name: "Cajun Corn Ribs", price: "6", dietary: ["GF"] },
-        ],
-      },
-      {
-        title: "Mains",
-        items: [
-          { name: "Confit Salmon", description: "Asparagus, pea & baby gem fricassée, crisp salmon skin", price: "24", dietary: ["GF"] },
-          { name: "Pork Belly", description: "Chorizo sauce, tenderstem broccoli", price: "27", dietary: ["GF"] },
-          { name: "Nori Miso Cod", description: "Pickled shiitake mushroom, dashi beurre blanc, nori prawn cracker", price: "26.50", dietary: ["GF"] },
-          { name: "Duck Breast", description: "Mandarin parsnips, duck fat carrot purée", price: "26.50", dietary: ["GF"] },
-          { name: "King Prawn Orecchiette", description: "Cherry tomatoes, garlic & chilli butter, rocket", price: "18" },
-          { name: "Korean Chicken", description: "Coconut sticky rice, Asian slaw, pickled radish, gochujang", price: "17" },
-          { name: "Squash Orzo", description: "Tenderstem broccoli", price: "17", dietary: ["VG"] },
-          { name: "Refuge Burger", description: "Beef tomato, lettuce, emmental, burger sauce", price: "17" },
-          { name: "Fillet Steak", description: "Served with a choice of cognac & peppercorn sauce, Café de Paris butter or chimichurri", price: "34", dietary: ["GF"] },
-        ],
-      },
-      {
-        title: "Desserts",
-        items: [
-          { name: "Popcorn Parfait", description: "Salted caramel meringue, blueberry compote", price: "7.95" },
-          { name: "Stilton Burnt Basque Cheesecake", description: "Spiced pumpkin jam", price: "7.95" },
-          { name: "Sticky Honey Cake", description: "Vanilla ice cream", price: "7.95" },
-          { name: "Watermelon & Lime Sorbet", price: "7.95", dietary: ["VG", "GF"] },
-          { name: "Espresso Martini Affogato", description: "Kahlúa, vanilla Absolut, vanilla ice cream, double espresso", price: "12", dietary: ["GF"] },
-        ],
-      },
-      {
-        title: "Side Dishes",
-        items: [
-          { name: "Creamed Spinach", price: "5", dietary: ["GF"] },
-          { name: "French Fries", price: "5", dietary: ["GF"] },
-          { name: "Parmesan Fries", price: "6", dietary: ["GF"] },
-          { name: "Roast Carrots", description: "Café de Paris butter", price: "5", dietary: ["GF"] },
-          { name: "New Potatoes", description: "Garlic butter", price: "5", dietary: ["GF"] },
-          { name: "Sweet Potato Mash", price: "5", dietary: ["GF"] },
-        ],
-      },
-    ],
-    note:
-      "Please always inform your server of any allergies or intolerances before placing your order. Not all ingredients are listed on the menu and we cannot guarantee the total absence of allergens.",
-  },
-  {
     slug: "winter-lunch",
     title: "Winter Lunch Menu",
     intro:
-      "Available from November 24th — served Tuesday to Friday, 12–4 PM. Seasonal winter dishes made with the best of island produce.",
+      "Served Tuesday to Friday, 12–4 PM. Seasonal winter dishes made with the best of island produce.",
     pdf: "/menus/24.11.2026%20-%20Winter%20Lunch%20Menu.pdf",
     banner: "/hero-image.jpg",
     sections: [
@@ -209,7 +93,7 @@ export const menus: Menu[] = [
     slug: "winter-evening",
     title: "Winter Evening Menu",
     intro:
-      "Available from November 24th — served Thursday to Saturday evening. Seasonal winter dishes, ethical and locally sourced wherever possible.",
+      "Served Thursday to Saturday evening. Seasonal winter dishes, ethical and locally sourced wherever possible.",
     pdf: "/menus/24.11.2026%20-%20Winter%20Evening%20Menu.pdf",
     banner: "/hero-image.jpg",
     sections: [

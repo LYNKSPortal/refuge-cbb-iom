@@ -19,10 +19,8 @@
 ## Pages
 
 - / — Home (story, signature dishes, chef, reviews, gallery, reservations)
-- /menus/lunch — Lunch menu (Tue–Fri 12–4 PM)
-- /menus/evening — Evening menu (Thu–Sat evenings)
-- /menus/winter-lunch — Winter lunch menu (from 24 Nov)
-- /menus/winter-evening — Winter evening menu (from 24 Nov)
+- /menus/winter-lunch — Lunch menu (Tue–Fri 12–4 PM)
+- /menus/winter-evening — Evening menu (Thu–Sat evenings)
 - /menus/drinks — Full drinks list: wines, cocktails, spirits, beers, coffee
 
 ## Downloads

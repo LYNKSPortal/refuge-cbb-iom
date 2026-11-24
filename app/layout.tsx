@@ -107,10 +107,8 @@ const restaurantJsonLd = {
   servesCuisine: ["Modern European", "Bistro", "British"],
   priceRange: "££",
   acceptsReservations: "True",
-  hasMenu: `${site.url}/menus/lunch`,
+  hasMenu: `${site.url}/menus/winter-lunch`,
   menu: [
-    `${site.url}/menus/lunch`,
-    `${site.url}/menus/evening`,
     `${site.url}/menus/winter-lunch`,
     `${site.url}/menus/winter-evening`,
     `${site.url}/menus/drinks`,

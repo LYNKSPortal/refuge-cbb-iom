@@ -1,19 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import Reveal from "@/components/Reveal";
-import { dietaryLegend, type Menu } from "@/lib/menus";
+import { dietaryLegend, menus, type Menu } from "@/lib/menus";
 import { menuJsonLd, breadcrumbJsonLd } from "@/lib/schema";
 import { site } from "@/lib/site";
 
 export default function MenuPage({ menu }: { menu: Menu }) {
-  const pairs: Record<Menu["slug"], { slug: Menu["slug"]; label: string }> = {
-    lunch: { slug: "evening", label: "Evening" },
-    evening: { slug: "lunch", label: "Lunch" },
-    "winter-lunch": { slug: "winter-evening", label: "Winter Evening" },
-    "winter-evening": { slug: "winter-lunch", label: "Winter Lunch" },
-    drinks: { slug: "evening", label: "Evening" },
-  };
-  const other = pairs[menu.slug];
+  const otherMenus = menus.filter((m) => m.slug !== menu.slug);
 
   return (
     <div>
@@ -48,6 +41,7 @@ export default function MenuPage({ menu }: { menu: Menu }) {
           <h1 className="mt-5 font-display text-5xl font-medium text-ivory md:text-6xl">
             {menu.title.toUpperCase()}
           </h1>
+
           <p className="mx-auto mt-6 max-w-md text-base font-normal leading-relaxed text-ivory/80">
             {menu.intro}
           </p>
@@ -110,30 +104,40 @@ export default function MenuPage({ menu }: { menu: Menu }) {
         </p>
       )}
 
-      <div className="mt-12 flex flex-col flex-wrap items-center justify-center gap-4 border-t border-navy/10 pt-10 sm:flex-row">
-        {menu.pdf && (
+      <div className="mt-12 border-t border-navy/10 pt-10">
+        <p className="text-center text-xs font-medium uppercase tracking-[0.22em] text-navy/50">
+          All Menus
+        </p>
+        <div className="mt-5 flex flex-wrap items-center justify-center gap-3">
+          {otherMenus.map((m) => (
+            <Link
+              key={m.slug}
+              href={`/menus/${m.slug}`}
+              className="border border-navy px-5 py-2.5 text-xs tracking-[0.18em] uppercase text-navy transition-colors hover:bg-navy hover:text-ivory"
+            >
+              {m.title}
+            </Link>
+          ))}
+        </div>
+        <div className="mt-8 flex flex-col flex-wrap items-center justify-center gap-4 sm:flex-row">
+          {menu.pdf && (
+            <a
+              href={menu.pdf}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-navy px-7 py-3 text-sm tracking-[0.2em] uppercase text-navy transition-colors hover:bg-navy hover:text-ivory"
+            >
+              View PDF Version
+            </a>
+          )}
           <a
-            href={menu.pdf}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="border border-navy px-7 py-3 text-sm tracking-[0.2em] uppercase text-navy transition-colors hover:bg-navy hover:text-ivory"
+            href={site.bookingUrl ?? site.phoneHref}
+            {...(site.bookingUrl ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+            className="bg-navy px-7 py-3 text-sm tracking-[0.2em] uppercase text-ivory transition-colors hover:bg-navy-deep"
           >
-            View PDF Version
+            Book a Table
           </a>
-        )}
-        <Link
-          href={`/menus/${other.slug}`}
-          className="border border-navy px-7 py-3 text-sm tracking-[0.2em] uppercase text-navy transition-colors hover:bg-navy hover:text-ivory"
-        >
-          View {other.label} Menu
-        </Link>
-        <a
-          href={site.bookingUrl ?? site.phoneHref}
-          {...(site.bookingUrl ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-          className="bg-navy px-7 py-3 text-sm tracking-[0.2em] uppercase text-ivory transition-colors hover:bg-navy-deep"
-        >
-          Book a Table
-        </a>
+        </div>
       </div>
       </div>
     </div>

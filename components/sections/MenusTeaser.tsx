@@ -15,24 +15,14 @@ export default function MenusTeaser() {
       <div className="grid gap-6 md:grid-cols-2">
         {[
           {
-            href: "/menus/lunch",
-            title: "Lunch Menu",
-            sub: "Tue–Fri, 12–4 PM",
-          },
-          {
-            href: "/menus/evening",
-            title: "Evening Menu",
-            sub: "Thu–Sat evenings",
-          },
-          {
             href: "/menus/winter-lunch",
             title: "Winter Lunch Menu",
-            sub: "Available from Nov 24th",
+            sub: "Tue–Fri, 12–4 PM",
           },
           {
             href: "/menus/winter-evening",
             title: "Winter Evening Menu",
-            sub: "Available from Nov 24th",
+            sub: "Thu–Sat evenings",
           },
           {
             href: "/menus/drinks",

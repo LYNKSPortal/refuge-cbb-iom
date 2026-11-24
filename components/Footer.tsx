@@ -27,8 +27,9 @@ export default function Footer() {
             {[
               ["Home", "/"],
               ["Our Story", "/#story"],
-              ["Lunch Menu", "/menus/lunch"],
-              ["Evening Menu", "/menus/evening"],
+              ["Winter Lunch Menu", "/menus/winter-lunch"],
+              ["Winter Evening Menu", "/menus/winter-evening"],
+              ["Drinks Menu", "/menus/drinks"],
               ["Gallery", "/#gallery"],
               ["Reviews", "/#reviews"],
             ].map(([label, href]) => (

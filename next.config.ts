@@ -3,10 +3,12 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   async redirects() {
     return [
-      { source: "/lunch-menu", destination: "/menus/lunch", permanent: true },
-      { source: "/evening-menu", destination: "/menus/evening", permanent: true },
+      { source: "/lunch-menu", destination: "/menus/winter-lunch", permanent: true },
+      { source: "/evening-menu", destination: "/menus/winter-evening", permanent: true },
       { source: "/drinks-menu", destination: "/menus/drinks", permanent: true },
-      { source: "/menus", destination: "/menus/lunch", permanent: false },
+      { source: "/menus/lunch", destination: "/menus/winter-lunch", permanent: true },
+      { source: "/menus/evening", destination: "/menus/winter-evening", permanent: true },
+      { source: "/menus", destination: "/menus/winter-lunch", permanent: false },
     ];
   },
   images: {
